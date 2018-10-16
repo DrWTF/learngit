@@ -7,3 +7,4 @@ b1
 Create a new branch is quick and simple.
 ding branch3
 
+do some change before merge stash
