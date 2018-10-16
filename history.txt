@@ -1,0 +1,209 @@
+    1  git init
+    2  git add
+    3  git add .
+    4  git add readme.txt
+    5  git diff
+    6  git commit -m "wrote a readme file"
+    7  git config --global user.email "752336256@qq.com"
+    8  git config --global user.name "DrWTF"
+    9  git commit -m "wrote a readme file"
+   10  git add readme.txt 
+   11  git commit -m "append GPL
+"
+   12  git add readme.txt 
+   13  git add readme.txt 
+   14  git commit -m "append GPL
+"
+   15  git add readme.txt 
+   16  git commit -m "append GPL
+"
+   17  git log
+   18  git log --pretty=oneline
+   19  git reset --hard HEAD^
+   20  git log
+   21  git log --pretty=oneline
+   22  cat readme.txt 
+   23  git reset --hard e6
+   24  git reset --hard e6cf
+   25  git log
+   26  cat readme.txt 
+   27  git reflog
+   28  git status
+   29  vi readme.txt 
+   30  git status
+   31  git add readme.txt 
+   32  git add LICENSE 
+   33  git  status
+   34  git reset HEAD  readme.txt
+   35  git status
+   36  git add readme.txt 
+   37  git status
+   38  git commit -m "understand how stage works"
+   39  git status
+   40  git add readme.txt 
+   41  git commit -m ""
+   42  git commit -m "My stupid boss still prefers SVN"
+   43  git status
+   44  git diff
+   45  git  log
+   46  history
+   47  git log --pretty=oneline
+   48  cat readme.txt 
+   49  git reset --hard HEAD^
+   50  cat readme.txt 
+   51  vi readme.txt 
+   52  git status
+   53  git add readme.txt 
+   54  cat readme.txt 
+   55  git checkout -- readme.txt
+   56  cat readme.txt 
+   57  git reset  head readme.txt
+   58  git status 
+   59  cat readme.txt 
+   60  git checkout -- readme.txt
+   61  cat readme.txt 
+   62  git add  test.txt 
+   63  git status
+   64  rm test.txt 
+   65  git checkout -- test.txt
+   66  touch test.txt 
+   67  vi test.txt 
+   68  cat test.txt 
+   69  rm test.txt 
+   70  git checkout -- test.txt
+   71  cat test.txt 
+   72  git checkout -- test.txt1
+   73  vi test.txt 
+   74  git add test.txt 
+   75  git add test.txt 
+   76  cat test.txt 
+   77  rm test.txt 
+   78  git checkout -- test.txt
+   79  cat test.txt 
+   80  git remote add origin https://github.com/DrWTF/learngit.git
+   81  git push -u origin master
+   82  cd ..
+   83  ll
+   84  cd SpringCloudLearning/
+   85  pwd
+   86  git clone https://github.com/DrWTF/SpringCloudLearning.git
+   87  git status
+   88  cd ../learngit/
+   89  ll
+   90  pwd
+   91  git checkout -b dev
+   92  git branch
+   93  git checkout master
+   94  git branch
+   95  git checkout dev
+   96  vi readme.txt 
+   97  git add readme.txt 
+   98   git commit -m "branch test"
+   99  git checkout master
+  100  git checkout dev
+  101  git checkout master
+  102  cat readme.txt 
+  103  git merge dev
+  104  cat readme.txt 
+  105  git checkout -b b1
+  106  vi readme.txt 
+  107  git add readme.txt 
+  108  git commit -m "and simple"
+  109  git checkout master
+  110  cat readme.txt 
+  111  vi readme.txt 
+  112  git add readme.txt 
+  113  git commit -m "& simple"
+  114  git merge b1
+  115  git status
+  116  cat readme.txt 
+  117  vi readme.txt 
+  118  git add readme.txt 
+  119  git commit -m "conflict fixed"
+  120  git status
+  121  git log --graph --pretty=online ---abbrev-commit
+  122  git log --graph --pretty=oneline ---abbrev-commit
+  123  git log --graph --pretty=oneline --abbrev-commit
+  124  git branch -d b1
+  125  git log --graph --pretty=oneline --abbrev-commit
+  126  git log --graph --pretty=oneline --abbrev-commit
+  127  git checkout -b ding
+  128  vi readme.txt 
+  129  git add readme.txt 
+  130  git commit -m "ding branch"
+  131  git checkout master
+  132  cat readme.txt 
+  133  git merge -m "merge ding" ding
+  134  git log -graph
+  135  git log --graph
+  136  git log --graph --pretty-oneline
+  137  git log --graph --pretty=oneline
+  138  git checkout -b ding
+  139  vi readme.txt 
+  140  git add readme.txt 
+  141  git commit -m "ding2"
+  142  git log --graph --pretty=oneline
+  143  git checkout ding
+  144  git merge master
+  145  git log --graph --pretty=oneline
+  146  git status
+  147  vi readme.txt 
+  148  git add readme.txt 
+  149  git commit -m "ding3"
+  150  git log --graph --pretty=oneline
+  151  git log --graph --pretty=oneline --abbrev-commit
+  152  git checkout master
+  153  git merge -no-ff -m "merge ding3 with no fast forward"
+  154  git merge --no-ff -m "merge ding3 with no fast forward" ding
+  155  git log --graph --pretty=oneline --abbrev-commit
+  156  git branch a
+  157  git log --graph --pretty=oneline --abbrev-commit
+  158  git status
+  159  git branch -d a
+  160  git branch -d ding
+  161  git branch -d dev
+  162  git log --graph --pretty=oneline --abbrev-commit
+  163  vi readme.txt 
+  164  git stash
+  165  git stash list
+  166  git checkout master
+  167  vi readme.txt 
+  168  git add readme.txt 
+  169  git commit -m "do some change before merge stash"
+  170  git stash list
+  171  git stash apply stash@{0}
+  172  cat readme.txt 
+  173  git stash list
+  174  git stash pop
+  175  cat readme.txt 
+  176  vi readme.txt 
+  177  git stash pop
+  178  cat readme.txt 
+  179  git add readme.txt 
+  180  git commit -m "stash change"
+  181  git stash pop
+  182  git stash list
+  183  cat readme.txt 
+  184  git add readme.txt 
+  185  git commit -m "commit with conflict"
+  186  git stash list
+  187  git stash drop
+  188  git stash list
+  189  vi readme.txt 
+  190  cat readme.txt 
+  191  git add readme.txt 
+  192  git commit -m "solute conflict"
+  193  git log --graph --pretty=oneline
+  194  git remote
+  195  git remote -v
+  196  git tag v1.0
+  197  git tag
+  198  git show v1.0
+  199  vi readme.txt 
+  200  vi git.config.txt
+  201  git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  202  git lg
+  203  git add git.config.txt 
+  204  git commit -m "config global alias"
+  205  history -> gitlearnhistory.txt
+  206  history > gitlearnhistory.txt
