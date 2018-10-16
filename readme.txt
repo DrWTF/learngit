@@ -7,5 +7,10 @@ b1
 Create a new branch is quick and simple.
 ding branch3
 
+<<<<<<< Updated upstream
 do some change before merge stash
 test stash
+=======
+test stash
+
+>>>>>>> Stashed changes
